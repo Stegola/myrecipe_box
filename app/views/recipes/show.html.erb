@@ -1,0 +1,7 @@
+<%= image_tag @recipe.image.url(:medium) %>
+<h1><%= @recipe.title %></h1>
+<p><%= @recipe.description %></p>
+
+
+<button><%= link_to 'Edit', edit_recipe_path %></button>
+<button><%= link_to 'Delete', recipe_path, method: :destroy, data: {confirm: 'Are you sure?'} %></button>
